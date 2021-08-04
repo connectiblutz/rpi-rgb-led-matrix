@@ -50,6 +50,9 @@ public:
   // Returns 'true' if parameter was parsed successfully.
   virtual bool SetParameters(int chain, int parallel,
                              const char *parameter_string) {
+    (void)chain;
+    (void)parallel;
+    (void)parameter_string;
     return true;
   }
 
